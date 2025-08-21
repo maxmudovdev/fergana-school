@@ -133,8 +133,20 @@ export default function Footer() {
 
       <div className="border-t border-gray-100 dark:border-gray-700">
         <div className="container py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 dark:text-gray-400">
-          <div>© {new Date().getFullYear()} Fergana School — {t('footer.rights') || 'All rights reserved'}</div>
-          <div className="text-right">Разработка и поддержка — Maxmudov Ulug'bek • <a href={`tel:${phoneSecondary?.replace(/\s+/g, '')}`} className="text-fsBlue hover:underline">{phoneSecondary}</a></div>
+          <div className="text-center md:text-left mb-2 md:mb-0">
+      © {new Date().getFullYear()} Fergana School — {t('footer.rights') || 'All rights reserved'}
+    </div>
+         <div className="text-center md:text-right">
+      Разработка и поддержка — 
+      <a 
+        href="https://t.me/maxmudovdev" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-fsBlue font-medium hover:underline ml-1"
+      >
+        Maxmudov Ulug'bek
+      </a>
+    </div>
         </div>
       </div>
     </footer>
