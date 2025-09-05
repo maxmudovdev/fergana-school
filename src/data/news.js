@@ -1,8 +1,8 @@
 // src/data/news.js
 // Импортируем изображения из src/assets (Vite позаботится о бандлинге)
-import img1 from '../assets/news-1.jpg'
-import img2 from '../assets/img-2.jpg'
-import img3 from '../assets/news-3.jpg'
+import img1 from '../assets/img-5.jpg'
+import img2 from '../assets/img-6.jpg'
+import img3 from '../assets/img-7.jpg'
 
 const news = [
   {
@@ -10,19 +10,19 @@ const news = [
     date: '2025-08-14',
     image: img1,
     title: {
-      uz: "Fergana School aeroport filialida olimpiada o'tkazildi",
-      ru: "В Fergana School прошла олимпиада",
-      en: "Fergana School hosted an Olympiad"
+      uz: "Fergana School xususiy maktabida avtobus qatnovi yo‘lga qo‘yildi. ",
+      ru: "В частной школе Fergana School организовано движение школьных автобусов.",
+      en: "School Bus Service at Fergana School"
     },
     excerpt: {
-      uz: "Fergana Schoolning Aeroport filialida o‘quvchilarning ilmiy salohiyatini qo‘llab-quvvatlash maqsadida olimpiada o‘tkazildi.",
-      ru: "В филиале Fergana School в Аэропорте была проведена олимпиада с целью поддержки научного потенциала учащихся.",
-      en: "An olympiad was held at the Airport branch of Fergana School with the aim of supporting students’ scientific potential."
+      uz: "O‘quvchilarimizning maktabga xavfsiz va qulay tarzda yetib kelishini ta’minlash maqsadida maxsus avtobuslar tashkil etildi.",
+      ru: "В целях обеспечения безопасности и удобства учащихся для них организован специальный автобусный транспорт.",
+      en: "To ensure the safety and convenience of our students, Fergana School has organized a dedicated school bus service."
     },
     content: {
-      uz: "18 avgust kuni Fergana Schoolning Aeroport filialida o‘quvchilar o‘rtasida fan olimpiadasi o‘tkazildi. Tadbirning maqsadi o‘quvchilarning fanlarga bo‘lgan qiziqishini oshirish, iqtidorli yoshlarni aniqlash hamda ularning ilmiy ko‘nikmalarini rivojlantirishdan iborat bo‘ldi.",
-      ru: "18 августа в аэропортовском филиале Fergana School была проведена олимпиада по предметам среди учащихся. Цель мероприятия заключалась в повышении интереса школьников к наукам, выявлении одарённых молодых людей, а также в развитии их научных навыков.",
-      en: "On August 18, a subject olympiad was held among students at the Airport branch of Fergana School. The purpose of the event was to increase students’ interest in sciences, identify talented youth, and develop their scientific skills."
+      uz: "O‘quvchilarimizning maktabga xavfsiz va qulay tarzda yetib kelishini ta’minlash maqsadida maxsus avtobuslar tashkil etildi. Avtobuslar Farg‘ona shahrining turli hududlaridan qatnovchi belgilangan marshrut va jadval asosida har kuni o‘quvchilarni olib keladi hamda darslardan so‘ng uylariga qaytaradi.",
+      ru: "В целях обеспечения безопасности и удобства учащихся для них организован специальный автобусный транспорт. Автобусы курсируют по различным районам города Ферганы в соответствии с утверждённым маршрутом и расписанием, ежедневно доставляя учеников в школу и обратно домой после занятий.",
+      en: "To ensure the safety and convenience of our students, Fergana School has organized a dedicated school bus service. The buses operate along designated routes and schedules across different districts of Fergana City, transporting students to school in the morning and bringing them back home after classes."
     }
   },
   {
@@ -30,35 +30,35 @@ const news = [
     date: '2025-08-09',
     image: img2,
     title: { 
-    uz: "Fergana School xususiy maktabida ochiq eshiklar kuni", 
-    ru: "В частной школе Fergana School был проведён День открытых дверей.", 
-    en: "An Open Doors Day was held at Fergana School private school." 
+      uz: "Fergana School oshxonasida o‘quvchilar uchun mazali va sifatli ovqatlar tayyorlanmoqda.", 
+      ru: "В школьной столовой Fergana School готовятся вкусные и качественные блюда.", 
+      en: "Delicious and high-quality meals are prepared at the Fergana School cafeteria." 
     },
     excerpt: { 
-    uz: "Tadbirning asosiy maqsadi ota-onalar va o‘quvchilarga ta’lim jarayoni hamda yaratilgan shart-sharoitlar bilan yaqindan tanishtirishdan iborat bo‘ldi.", 
-    ru: "Основной целью мероприятия было ознакомление родителей и учащихся с учебным процессом и созданными условиями.", 
-    en: "The main purpose of the event was to familiarize parents and students with the educational process and the facilities provided." },
+      uz: "Bolalar salomatligi va to‘g‘ri ovqatlanishini ta’minlash maqsadida menyu mutaxassislar tomonidan ishlab chiqilgan bo‘lib, faqatgina sifatli hamda toza mahsulotlardan foydalaniladi.", 
+      ru: "Для обеспечения здоровья и правильного питания учащихся меню составлено специалистами, при этом используются только свежие и качественные продукты.", 
+      en: "To ensure the health and proper nutrition of our students, the menu is carefully designed by specialists and prepared using only fresh and high-quality ingredients." },
     content: { 
-    uz: "Ochiq eshiklar kuni mehmonlarda katta taassurot qoldirdi. Ko‘plab ota-onalar va o‘quvchilar maktabning ta’lim sifati va yaratilgan shart-sharoitlarga yuqori baho berdilar.", 
-    ru: "День открытых дверей произвёл большое впечатление на гостей. Многие родители и учащиеся высоко оценили качество образования и созданные условия в школе.", 
-    en: "The Open Doors Day left a great impression on the guests. Many parents and students highly appreciated the quality of education and the facilities provided at the school." }
+      uz: "Fergana School oshxonasida o‘quvchilar uchun mazali va sifatli ovqatlar tayyorlanmoqda. Bolalar salomatligi va to‘g‘ri ovqatlanishini ta’minlash maqsadida menyu mutaxassislar tomonidan ishlab chiqilgan bo‘lib, faqatgina sifatli hamda toza mahsulotlardan foydalaniladi.", 
+      ru: "В школьной столовой Fergana School готовятся вкусные и качественные блюда. Для обеспечения здоровья и правильного питания учащихся меню составлено специалистами, при этом используются только свежие и качественные продукты. Блюда не только вкусные, но и полезные, способствующие полноценному развитию детей.", 
+      en: "Delicious and high-quality meals are prepared at the Fergana School cafeteria. To ensure the health and proper nutrition of our students, the menu is carefully designed by specialists and prepared using only fresh and high-quality ingredients. The meals are not only tasty but also nutritious, supporting the students’ overall growth and development." }
   },
   {
     id: '3',
     date: '2025-07-9',
     image: img3,
     title: { 
-    uz: "Kelajakka qadam loyihasi doirasida Karyera kuni tashkil etildi", 
-    ru: "В рамках проекта «Шаг в будущее» был организован День карьеры.", 
-    en: "Creative Evening" },
+      uz: "Fergana School xususiy maktabida dars jarayonlari zamonaviy metodika asosida tashkil etilgan.", 
+      ru: "Учебный процесс в частной школе Fergana School организован на основе современных методик.", 
+      en: "The learning process at Fergana School is organized based on modern educational methods." },
     excerpt: { 
-    uz: "Farg'ona davlat universiteti tashabbusi bilan Kelajakka qadam loyihasi doirasida Karyera kuni tashkil etildi.", 
-    ru: "По инициативе Ферганского государственного университета в рамках проекта «Шаг в будущее» был организован День карьеры.", 
-    en: "At the initiative of Fergana State University, a Career Day was organized within the framework of the “Step into the Future” project." },
+      uz: "Ta’lim jarayonida ilg‘or pedagogik texnologiyalar, interaktiv metodlar va amaliy mashg‘ulotlarga alohida e’tibor qaratiladi.", 
+      ru: "В образовательном процессе используются передовые педагогические технологии, интерактивные методы и практические занятия.", 
+      en: "Advanced teaching technologies, interactive methods, and practical activities are actively applied during lessons." },
     content: { 
-    uz: "Tadbir dasturi doirasida ishtirokchilar uchun ma’ruzalar, mahorat darslari, panel suhbatlar, kasbiy yo‘naltirish testlari hamda HR-mutaxassislar bilan yakka tartibdagi konsultatsiyalar tashkil etildi.", 
-    ru: "В рамках программы мероприятия для участников были организованы лекции, мастер-классы, панельные дискуссии, профориентационные тесты, а также индивидуальные консультации с HR-специалистами.", 
-    en: "As part of the event program, participants attended lectures, master classes, panel discussions, career guidance tests, and individual consultations with HR specialists." }
+      uz: "Fergana School xususiy maktabida dars jarayonlari zamonaviy metodika asosida tashkil etilgan. Ta’lim jarayonida ilg‘or pedagogik texnologiyalar, interaktiv metodlar va amaliy mashg‘ulotlarga alohida e’tibor qaratiladi. Har bir fan bo‘yicha o‘quvchilarning bilim olish jarayoni nazariy va amaliy mashg‘ulotlar uyg‘unligida olib boriladi.", 
+      ru: "Учебный процесс в частной школе Fergana School организован на основе современных методик. В образовательном процессе используются передовые педагогические технологии, интерактивные методы и практические занятия. По каждому предмету обучение строится в гармонии теории и практики.", 
+      en: "The learning process at Fergana School is organized based on modern educational methods. Advanced teaching technologies, interactive methods, and practical activities are actively applied during lessons. For each subject, the learning process combines both theory and practice to ensure effective education." }
   }
 ]
 
