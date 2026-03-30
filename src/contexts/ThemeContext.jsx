@@ -3,31 +3,40 @@ import React, { createContext, useState, useEffect } from 'react'
 export const ThemeContext = createContext()
 
 const THEME_KEY = 'fs_theme'
-const defaultTheme = 'light' // дефолт — светлая
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(defaultTheme)
 
-  useEffect(() => {
+  const getInitialTheme = () => {
+    if (typeof window === 'undefined') return 'light'
+
     const stored = localStorage.getItem(THEME_KEY)
-    if (stored === 'dark' || stored === 'light') {
-      setTheme(stored)
-    } else {
-      setTheme(defaultTheme)
+    if (stored === 'dark' || stored === 'light') return stored
+
+    // fallback: системная тема
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark'
     }
-  }, [])
+
+    return 'light'
+  }
+
+  const [theme, setTheme] = useState(getInitialTheme)
 
   useEffect(() => {
-    localStorage.setItem(THEME_KEY, theme)
     const root = document.documentElement
+
     if (theme === 'dark') {
       root.classList.add('dark')
     } else {
       root.classList.remove('dark')
     }
+
+    localStorage.setItem(THEME_KEY, theme)
   }, [theme])
 
-  const toggle = () => setTheme(t => (t === 'dark' ? 'light' : 'dark'))
+  const toggle = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggle }}>

@@ -1,66 +1,129 @@
+// src/locales/uz.js
 export default {
   site: {
     title: 'Fergana School',
-    subtitle: 'Xususiy maktab — zamonaviy ta\'lim'
+    subtitle: 'Zamonaviy ta’lim beruvchi xususiy maktab'
   },
+
   nav: {
-    home: "Bosh sahifa",
-    video: "Video",
-    news: "Yangiliklar",
-    gallery: "Galereya",
-    about: "Maktab haqida",
-    programs: "Qulayliklar"
+    home: 'Bosh sahifa',
+    video: 'Maktab haqida',
+    news: 'Yangiliklar',
+    schedule: 'Dars jadvali',
+    gallery: 'Galereya',
+    about: 'Maktab haqida',
+    programs: 'Afzalliklar'
   },
+
   video: {
-  title: "Fergana School",        // uz
-  heading: "Maktab haqida",                     // uz
-  description: "Fergana School davlat ta’lim standartlari va zamonaviy pedagogik yondashuvlar uyg‘unligiga asoslangan zamonaviy ta’lim dasturini taklif etadi. O‘quv jarayoni kichik sinflarda olib boriladi, bu esa har bir o‘quvchiga individual yondashuv va bilimlarni yuqori darajada o‘zlashtirish imkonini beradi. Chet tillarini chuqur o‘rganish, axborot texnologiyalari va tanqidiy tafakkurni rivojlantirishga alohida e’tibor qaratiladi. Maktabda shaxsning har tomonlama rivojlanishi uchun zarur sharoitlar yaratilgan: ijodiy va sport to‘garaklari faoliyat yuritadi, chuqurlashtirilgan fanlar bo‘yicha qo‘shimcha mashg‘ulotlar tashkil etiladi, loyiha va tadqiqot ishlari amalga oshiriladi. O‘quv jarayoni zamonaviy talablarga javob beradigan qulay va xavfsiz muhitda tashkil etilgan. Fergana School o‘quvchilarda mustahkam bilim, mustaqil ishlash ko‘nikmalari va mas’uliyatni shakllantirishga yo‘naltirilgan bo‘lib, bu esa ta’limni muvaffaqiyatli davom ettirish va shaxsiy rivojlanishning asosiy omilidir."
-},
-news: {
+    title: 'Fergana School',
+    heading: 'Maktab haqida',
+    description:
+      'Fergana School — zamonaviy xususiy maktab bo‘lib, unda sifatli ta’lim, tarbiya va individual yondashuv uyg‘unlashgan. Darslar kichik sinflarda tashkil etiladi, bu esa har bir o‘quvchiga alohida e’tibor berish va bilimlarni puxta o‘zlashtirish imkonini yaratadi. Maktabda xorijiy tillar, axborot texnologiyalari, mantiqiy fikrlash va mustaqil ishlash ko‘nikmalarini rivojlantirishga alohida ahamiyat beriladi. O‘quvchilar uchun qulay va xavfsiz muhit, qo‘shimcha mashg‘ulotlar, to‘garaklar, sport yo‘nalishlari hamda har tomonlama rivojlanish imkoniyatlari yaratilgan.'
+  },
+
+  news: {
   readMore: "Batafsil",
   notFound: "Yangilik topilmadi",
-  backToList: "Yangiliklar ro'yxatiga qaytish"
+  backToList: "Yangiliklar ro‘yxatiga qaytish",
+  noImage: "Rasm yo‘q",
+  pageDescription: "Fergana School yangiliklari, tadbirlari va muhim e’lonlarini kuzatib boring."
 },
+
+  schedule: {
+    title: 'Dars jadvali',
+    subtitle: 'Guruh va hafta kunini tanlang',
+    russianShort: 'Rus',
+    uzbekShort: 'O‘z',
+    russianGroups: 'Rus guruhlari',
+    uzbekGroups: 'O‘zbek guruhlari',
+    subject: 'Fan',
+    room: 'Xona',
+    time: 'Vaqt',
+    noLessons: 'Bu kunda dars yo‘q',
+    selectClass: 'Sinfni tanlang',
+    days: {
+      monday: 'Du',
+      tuesday: 'Se',
+      wednesday: 'Ch',
+      thursday: 'Pa',
+      friday: 'Ju',
+      saturday: 'Sh'
+    }
+  },
+
   hero: {
-    title: "Fergana School — yetuk yetakchilar shakllanadigan joy",
-    description: "1-sinfdan 11-sinfgacha rus va o'zbek sinflari. 8:30 dan 17:00 gacha zamonaviy ta'lim va sharqona tarbiya.  Uch mahal issiq ovqat.  Qo'shimcha xorijiy tillar va sport to'garaklari.  Robototexnika va IT to'garaklari.  Qulay yotoqxona .  Bepul transport xizmati.",
-    ctaVideo: "Maktab haqida videoni ko'rish",
-    ctaGallery: "Galereyaga o'tish",
-    bullets: ["Kichik guruhlar","Shaxsiy rivojlanish rejasi","Imtihonlarga tayyorgarlik"]
+    title: 'Fergana School — bilim, tarbiya va rivojlanish maskani',
+    description:
+      '1-sinfdan 11-sinfgacha rus va o‘zbek tillarida ta’lim. Zamonaviy o‘quv muhiti, kuchli ustozlar jamoasi, qulay sharoitlar, issiq ovqat, qo‘shimcha tillar, IT va robototexnika, sport to‘garaklari, yotoqxona va transport xizmati.',
+    ctaVideo: 'Maktab haqida videoni ko‘rish',
+    ctaGallery: 'Galereyani ko‘rish',
+    bullets: ['Kichik sinflar', 'Individual yondashuv', 'Kelajak uchun tayyorgarlik'],
+    stat1: '1–11 sinflar',
+    stat2: '2 til guruhi',
+    stat3: '17:00 gacha'
   },
+
   features: {
-    f1: { title: "Malakali o'qituvchilar", desc: "Har bir bola bilan malakali o‘qituvchi va qo‘shimcha tarbiyachi ustoz shug‘ullanadi." },
-    f2: { title: "Xavfsiz muhit", desc: "Nazorat, tartib va bolalarga g'amxo'rlik." },
-    f3: { title: "Shaxsiy yondashuv", desc: "Har bir o'quvchi uchun individual rivojlanish rejasi." }
+    f1: {
+      title: 'Kuchli pedagoglar jamoasi',
+      desc: 'Tajribali o‘qituvchilar va tarbiyachilar o‘quvchilarning bilim olishi va rivojlanishini muntazam qo‘llab-quvvatlaydi.'
+    },
+    f2: {
+      title: 'Xavfsiz va qulay muhit',
+      desc: 'Maktabda o‘quvchilar uchun ishonchli, tartibli va qulay ta’lim muhiti yaratilgan.'
+    },
+    f3: {
+      title: 'Zamonaviy ta’lim yondashuvi',
+      desc: 'Akademik bilimlar, tillar, texnologiyalar va amaliy ko‘nikmalar uyg‘un ravishda rivojlantiriladi.'
+    }
   },
-  gallery: { title: "Galereya" },
+
+  gallery: {
+  title: "Galereya",
+  goToSlide: "Slaydga o‘tish",
+  slide1: "Maktab hududi",
+  slide2: "O‘quv sinfi",
+  slide3: "Faollik zonasi",
+  slide4: "Arizalar qabuli",
+  slide5: "Maktab muhiti"
+},
+
   testimonials: {
-  title: "Ota-onalar fikri",
-  items: [
-    { name: "Alisher (ota)", text: "Yangi maktab biz kutgan barcha sharoitlarga ega ekan. Farzandimizning kelajagi ishonchli qo‘llarda." },
-    { name: "Dilfuza (ona)", text: "O'qituvchilar juda mehribon va professional." },
-    { name: "Mohira (ona)", text: "Farzandimiz uchun sifatli ta’lim va qulay muhit ta’minlanganidan xursandmiz." }
-  ],
-  // дополнительные sample ключи на случай fallback-ов
-  sample1: "Ajoyib maktab!",
-  sample2: "O'qituvchilar juda yaxshi.",
-  sample3: "Bolajonlar darsni sevib qatnashadi."
-}
-,
+    title: 'Ota-onalar fikri',
+    items: [
+      {
+        name: 'Alisher (ota)',
+        text: 'Maktabda farzandimiz uchun sifatli ta’lim va yaxshi tarbiya olishiga barcha sharoit yaratilgan.'
+      },
+      {
+        name: 'Dilfuza (ona)',
+        text: 'Ustozlar mehribon, e’tiborli va bolalarning natijasiga chin dildan qiziqadi.'
+      },
+      {
+        name: 'Mohira (ona)',
+        text: 'Bizga maktabdagi tartib, zamonaviy yondashuv va qulay muhit juda yoqadi.'
+      }
+    ],
+    sample1: 'Ajoyib maktab!',
+    sample2: 'Kuchli ustozlar.',
+    sample3: 'Bolalar darsga mamnuniyat bilan qatnaydi.'
+  },
+
   footer: {
-    contactTitle: "Kontaktlar",
-    addressLine1: "Farg'ona shahar Mushtarak ko'chasi 5-uy",
-    addressLine2: "Mo'ljal: Aeroport yo'li, Yusuf ota choyxonasi yonida",
-    phonePrimary: "+998 94 202 43 00",
-    phoneSecondary: "+998 94 001 50 18",
-    workHours: "Darslar 8:30 dan 17:00 gacha",
-    callNow: "Hozir qo'ng'iroq qilish",
-    showOnMap: "Kartadan ko'rish",
-    description: "Individual dasturlar, xavfsizlik va ijodiy muhit.",
-    workingHoursTitle: "Ish vaqti",
-    rights: "Barcha huquqlar himoyalangan",
-    admissions: "Maktabga qabul",
-    admissionsText: "Dasturlar bo'yicha maslahat — telefon orqali yoki maktabda",
-      quickInfoTitle: "Qo'shimcha ma'lumotlar"
+    contactTitle: 'Kontaktlar',
+    addressLine1: "Farg'ona shahri, Mushtarak ko‘chasi, 5-uy",
+    addressLine2: "Mo‘ljal: Aeroport yo‘li, Yusuf ota choyxonasi yonida",
+    phonePrimary: '+998 94 202 43 00',
+    phoneSecondary: '+998 94 001 50 18',
+    workHours: 'Du–Ju: 08:00 — 18:00; Sh: 09:00 — 14:00',
+    callNow: "Qo‘ng‘iroq qilish",
+    showOnMap: "Xaritada ko‘rish",
+    description: 'Zamonaviy ta’lim, xavfsizlik va har bir o‘quvchiga individual yondashuv.',
+    workingHoursTitle: 'Ish vaqti',
+    rights: 'Barcha huquqlar himoyalangan',
+    admissions: 'Maktabga qabul',
+    admissionsText: 'Ta’lim bo‘yicha ma’lumotni telefon orqali yoki maktabga tashrif buyurib olishingiz mumkin.',
+    quickInfoTitle: "Qo‘shimcha ma’lumot"
   }
 }

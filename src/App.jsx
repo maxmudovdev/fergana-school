@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import VideoPage from './pages/VideoPage'
 import NewsPage from './pages/NewsPage'
 import NewsArticle from './pages/NewsArticle'
+import SchedulePage from './pages/SchedulePage'
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
           <Route path="/video" element={<VideoPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:id" element={<NewsArticle />} />
-          {/* при желании можно добавить 404 */}
+          <Route path="/schedule" element={<SchedulePage />} />
         </Routes>
       </main>
       <Footer />
