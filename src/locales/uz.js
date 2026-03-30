@@ -82,10 +82,10 @@ export default {
   gallery: {
   title: "Galereya",
   goToSlide: "Slaydga o‘tish",
-  slide1: "Maktab hududi",
-  slide2: "O‘quv sinfi",
+  slide1: "Qabul davom etmoqda",
+  slide2: "Maktab hududi",
   slide3: "Faollik zonasi",
-  slide4: "Arizalar qabuli",
+  slide4: "Oshxona",
   slide5: "Maktab muhiti"
 },
 
