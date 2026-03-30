@@ -102,16 +102,17 @@ export default function Header() {
             paddingBottom: isScrolled ? 10 : 16,
           }}
           transition={{ duration: 0.25 }}
-          className="flex items-center justify-between"
+          className="flex items-center justify-between gap-3"
         >
-          <motion.div variants={navItem} className="min-w-0">
-            <Link to="/" className="flex items-center gap-4 min-w-0 group">
+          {/* LEFT */}
+          <motion.div variants={navItem} className="min-w-0 flex-1">
+            <Link to="/" className="flex items-center gap-3 min-w-0 flex-1 group">
               <motion.div
                 initial={{ rotate: 0, scale: 1 }}
                 animate={{
                   y: [0, -3, 0],
-                  width: isScrolled ? 56 : 80,
-                  height: isScrolled ? 56 : 80,
+                  width: isScrolled ? 48 : 64,
+                  height: isScrolled ? 48 : 64,
                 }}
                 transition={{
                   y: { duration: 4.5, repeat: Infinity, ease: 'easeInOut' },
@@ -119,7 +120,7 @@ export default function Header() {
                   height: { duration: 0.25 },
                 }}
                 whileHover={{ rotate: 8, scale: 1.06 }}
-                className="relative shrink-0"
+                className="relative shrink-0 sm:w-20 sm:h-20"
               >
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-200/60 via-cyan-100/40 to-indigo-200/50 dark:from-blue-500/20 dark:via-cyan-400/10 dark:to-indigo-500/20 blur-md scale-110" />
 
@@ -140,24 +141,24 @@ export default function Header() {
                 />
               </motion.div>
 
-              <div className="min-w-0">
+              <div className="min-w-0 overflow-hidden">
                 <motion.h1
                   animate={{
-                    fontSize: isScrolled ? '1.3rem' : '1.8rem',
+                    fontSize: isScrolled ? '1rem' : '1.25rem',
                   }}
                   transition={{ duration: 0.25 }}
-                  className="font-black tracking-tight text-gray-900 dark:text-white leading-tight"
+                  className="font-black tracking-tight text-gray-900 dark:text-white leading-tight truncate max-w-[150px] sm:max-w-[220px] md:max-w-none md:text-[1.8rem]"
                 >
                   {t('site.title')}
                 </motion.h1>
 
                 <motion.p
                   animate={{
-                    fontSize: isScrolled ? '0.78rem' : '1rem',
+                    fontSize: isScrolled ? '0.72rem' : '0.9rem',
                     opacity: isScrolled ? 0.9 : 1,
                   }}
                   transition={{ duration: 0.25 }}
-                  className="text-gray-500 dark:text-gray-400 truncate"
+                  className="hidden sm:block text-gray-500 dark:text-gray-400 truncate"
                 >
                   {t('site.subtitle')}
                 </motion.p>
@@ -165,6 +166,7 @@ export default function Header() {
             </Link>
           </motion.div>
 
+          {/* DESKTOP NAV */}
           <motion.nav
             variants={navItem}
             className="hidden lg:flex items-center gap-2 xl:gap-3"
@@ -217,23 +219,20 @@ export default function Header() {
             </motion.div>
           </motion.nav>
 
+          {/* MOBILE */}
           <motion.div
             variants={navItem}
-            className="lg:hidden flex items-center gap-2"
+            className="lg:hidden flex items-center gap-2 shrink-0"
           >
             <div className="rounded-2xl border border-gray-200/70 dark:border-white/10 bg-white/80 dark:bg-white/5 backdrop-blur-md px-2 py-1.5 shadow-sm">
               <LanguageSwitcher />
-            </div>
-
-            <div className="rounded-2xl border border-gray-200/70 dark:border-white/10 bg-white/80 dark:bg-white/5 backdrop-blur-md px-2 py-1.5 shadow-sm">
-              <ThemeToggle />
             </div>
 
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setOpen(true)}
               aria-label="Open menu"
-              className="p-2.5 rounded-2xl border border-gray-200/70 dark:border-white/10 bg-white/85 dark:bg-[#0b1736]/90 backdrop-blur-md shadow-sm"
+              className="p-2.5 rounded-2xl border border-gray-200/70 dark:border-white/10 bg-white/85 dark:bg-[#0b1736]/90 backdrop-blur-md shadow-sm shrink-0"
             >
               <HiMenu size={22} className="text-gray-700 dark:text-gray-200" />
             </motion.button>
@@ -241,6 +240,7 @@ export default function Header() {
         </motion.div>
       </div>
 
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {open && (
           <motion.div
