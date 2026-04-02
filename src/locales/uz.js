@@ -1,7 +1,7 @@
 // src/locales/uz.js
 export default {
   site: {
-    title: 'Fergana School',
+    title: 'Fergana School Ziyo',
     subtitle: 'Zamonaviy ta’lim beruvchi xususiy maktab'
   },
 
@@ -16,10 +16,10 @@ export default {
   },
 
   video: {
-    title: 'Fergana School',
+    title: 'Fergana School Ziyo',
     heading: 'Maktab haqida',
     description:
-      'Fergana School — zamonaviy xususiy maktab bo‘lib, unda sifatli ta’lim, tarbiya va individual yondashuv uyg‘unlashgan. Darslar kichik sinflarda tashkil etiladi, bu esa har bir o‘quvchiga alohida e’tibor berish va bilimlarni puxta o‘zlashtirish imkonini yaratadi. Maktabda xorijiy tillar, axborot texnologiyalari, mantiqiy fikrlash va mustaqil ishlash ko‘nikmalarini rivojlantirishga alohida ahamiyat beriladi. O‘quvchilar uchun qulay va xavfsiz muhit, qo‘shimcha mashg‘ulotlar, to‘garaklar, sport yo‘nalishlari hamda har tomonlama rivojlanish imkoniyatlari yaratilgan.'
+      'Fergana School Ziyo — zamonaviy xususiy maktab bo‘lib, unda sifatli ta’lim, tarbiya va individual yondashuv uyg‘unlashgan. Darslar kichik sinflarda tashkil etiladi, bu esa har bir o‘quvchiga alohida e’tibor berish va bilimlarni puxta o‘zlashtirish imkonini yaratadi. Maktabda xorijiy tillar, axborot texnologiyalari, mantiqiy fikrlash va mustaqil ishlash ko‘nikmalarini rivojlantirishga alohida ahamiyat beriladi. O‘quvchilar uchun qulay va xavfsiz muhit, qo‘shimcha mashg‘ulotlar, to‘garaklar, sport yo‘nalishlari hamda har tomonlama rivojlanish imkoniyatlari yaratilgan.'
   },
 
   news: {
@@ -53,7 +53,7 @@ export default {
   },
 
   hero: {
-    title: 'Fergana School — bilim, tarbiya va rivojlanish maskani',
+    title: 'Fergana School Ziyo — bilim, tarbiya va rivojlanish maskani',
     description:
       '1-sinfdan 11-sinfgacha rus va o‘zbek tillarida ta’lim. Zamonaviy o‘quv muhiti, kuchli ustozlar jamoasi, qulay sharoitlar, issiq ovqat, qo‘shimcha tillar, IT va robototexnika, sport to‘garaklari, yotoqxona va transport xizmati.',
     ctaVideo: 'Maktab haqida videoni ko‘rish',

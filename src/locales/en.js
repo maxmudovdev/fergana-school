@@ -1,7 +1,7 @@
 // src/locales/en.js
 export default {
   site: {
-    title: 'Fergana School',
+    title: 'Fergana School Ziyo',
     subtitle: 'A private school for modern education'
   },
 
@@ -16,10 +16,10 @@ export default {
   },
 
   video: {
-    title: 'Fergana School',
+    title: 'Fergana School Ziyo',
     heading: 'About School',
     description:
-      'Fergana School is a modern private school where strong academics are combined with values, discipline and individual attention. Learning is organized in small classes, allowing teachers to focus on each student and maintain a high standard of education. Special attention is given to foreign languages, information technology, critical thinking and independent learning skills. The school provides a safe and comfortable environment, additional lessons, clubs, sports activities and opportunities for well-rounded development.'
+      'Fergana School Ziyo is a modern private school where strong academics are combined with values, discipline and individual attention. Learning is organized in small classes, allowing teachers to focus on each student and maintain a high standard of education. Special attention is given to foreign languages, information technology, critical thinking and independent learning skills. The school provides a safe and comfortable environment, additional lessons, clubs, sports activities and opportunities for well-rounded development.'
   },
 
   news: {
@@ -53,7 +53,7 @@ export default {
   },
 
   hero: {
-    title: 'Fergana School — a space for knowledge, values and growth',
+    title: 'Fergana School Ziyo — a space for knowledge, values and growth',
     description:
       'Education from grades 1 to 11 in Russian and Uzbek. A modern learning environment, strong teachers, comfortable conditions, hot meals, extra languages, IT and robotics, sports clubs, dormitory and transport service.',
     ctaVideo: 'Watch school video',
